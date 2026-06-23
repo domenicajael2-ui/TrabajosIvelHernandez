@@ -1,0 +1,205 @@
+CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a2639; 
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.main-container {
+    padding: 100px 20px 40px 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #a0b2c6; /* Cambio sutil al pasar el mouse */
+}
+
+
+.content-section {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e2e8f0;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #cbd5e1;
+}
+
+.trabajos-intro {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto; /* Lo centra en la página */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #111a28; /* Fondo de carga para las fotos */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-prev { left: 10px; }
+.btn-next { right: 10px; }
+
+.contacto-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.info-line {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.info-line.nombre {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info-line.correo {
+    color: #38bdf8;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.info-line.correo:hover {
+    text-decoration: underline;
+}
+
+.contacto-foto-wrapper {
+    width: 250px; 
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #111a28;
+}
+
+.foto-personal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-personal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100%;
+        height: 700px; 
+    }
+    .contacto-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contacto-foto-wrapper {
+        width: 100%;
+        height: 400px;
+    }
+}

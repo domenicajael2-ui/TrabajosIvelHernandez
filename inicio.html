@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ivel Hernández</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Ivel Hernández</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container">
+
+        <section id="historia" class="content-section">
+            <div class="contacto-foto-wrapper">
+                    <img src="imagenes/Ivel hernandez.jpeg" alt="Foto Ivel Hernández" class="foto-personal">
+                </div>
+            <h2>Historia e Inicios</h2>
+            <p>Ivel Hernández es una destacada artista mexicana de efectos visuales (VFX) que ha logrado posicionarse en la élite de la industria cinematográfica de Hollywood. Su pasión por la animación y la tecnología la llevó a especializarse en la creación de simulaciones complejas y efectos digitales que dan vida a mundos fantásticos.</p>
+            <p>A lo largo de su trayectoria, ha colaborado con los estudios más importantes del mundo, demostrando que con disciplina, talento y dedicación es posible romper fronteras y alcanzar las metas más ambiciosas en el exigente ecosistema del cine digital internacional.</p>
+        </section>
+
+        <!-- SECCIÓN TRABAJOS (TEXTO + CARRUSEL) -->
+        <section id="trabajos" class="content-section">
+            <div class="trabajos-intro">
+                <p>Es una animadora reconocida por ser parte del equipo de efectos visuales en películas como <em>Detective Pikachu</em>, <em>Avatar El Camino del Agua</em>, <em>Avatar Fuego y Cenizas</em>, entre otros grandes éxitos de taquilla mundial.</p>
+            </div>
+            
+            <!-- Carrusel de 700x700 centrado -->
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="imagenes/Avatar_The_Way_of_Water_poster.jpg" alt="Avatar - El Camino del avatar_el_camino_del_agua_1_18437375">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagenes/Dune.jpg" alt="Dune">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagenes/Avatar Fire and ash.jpg" alt="Avatar - Fuego y Cenizas">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagenes/Rascacielos.jpg" alt="Rascacielos">
+                    </div>
+                </div>
+                <!-- Botones de navegación -->
+                <button class="carousel-btn btn-prev" id="prevBtn">&#10094;</button>
+                <button class="carousel-btn btn-next" id="nextBtn">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO Y PERFIL -->
+        <section id="contacto" class="content-section">
+            <h2>Contacto e Inspiración</h2>
+            
+            <div class="contacto-grid">
+                <!-- Información personal a la izquierda uno debajo del otro -->
+                <div class="contacto-info">
+                    <span class="info-line nombre">Domenica López</span>
+                    <span class="info-line carrera">Estudiante de la carrera de diseño</span>
+                    <a href="mailto:e1723486849@uisrael.edu.ec" class="info-line correo">e1723486849@uisrael.edu.ec</a>
+                </div>
+                
+                <div class="contacto-foto-wrapper">
+                    <img src="imagenes/fotocv.jpg" alt="Foto Domenica López" class="foto-personal">
+                </div>
+            </div>
+            <div class="texto-personal">
+                <p>Soy una artista apasionada por evaluar y aplaudir a los grandes artistas en diseño que han podido llegar alto por su esfuerzo y dedicación, con sus trabajos me inspiro y me motivo a ser mejor.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
